@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Lista de Compras</h1>
+    
+    <div class="input-group">
+      <input type="text" id="productoInput" placeholder="Ej: Leche, Pan..." autofocus>
+      <button id="agregarBtn" onclick="agregar()">➕ Agregar</button>
+    </div>
+    
+    <div class="button-group">
+      <button id="mostrarBtn" onclick="mostrar()">👀 Mostrar Lista</button>
+      <button id="descargarBtn" onclick="descargarLista()">📥 Descargar Lista</button>
+    </div>
+    
+    <div id="lista">
+      <div class="empty-state">Agrega productos para comenzar</div>
+    </div>
+  </div>
+
+  <script type="module" src="listaCompras.js"></script>
+</body>
+</html>
