@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de los Dos Punteros - Invitados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organizador de Mesa para Invitados</h1>
+        <p>Encuentra el primer par de invitados consecutivos cuyos nombres comienzan con la misma letra</p>
+        
+        <div class="input-section">
+            <label for="invitados">Lista de invitados (separados por comas):</label>
+            <input type="text" id="invitados" placeholder="Ej: Ana, Carlos, Alberto, Carmen, David">
+            <button onclick="buscarPareja()">Buscar Pareja</button>
+        </div>
+        
+        <div id="resultado" class="resultado"></div>
+        
+        
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
